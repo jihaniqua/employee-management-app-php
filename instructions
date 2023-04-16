@@ -1,0 +1,24 @@
+OPTIONAL PROJECT - ONLINE TIME TRACKER
+
+This is an ungraded project for practice.  This is simply a chance to work independently to practice your web development skills.  
+
+DESCRIPTION:
+The application will be an online time tracker, which can be used by a company to have employees or contractors log their daily hours.  This data can then be used to both invoice clients as well as generate payroll.  All pages should be private.
+
+REQUIREMENTS:
+
+1. All pages are private.  Passwords for user accounts must be hashed.  All employees (those who would submit timesheets) must have a user account.  Whoever sets up the registration and login needs to set up an account for me and email me the credentials.  
+
+2. Full CRUD functionality for managing Clients (sample data can be entered)
+
+3. Full CRUD functionality for managing Projects.  Each project must belong to a client (ie. there needs to be a Client dropdown on the add / edit Project page(s)).  Each project must also have a billing rate. (sample data can be entered)
+
+4. Full CRUD functionality for managing Timesheets.  Each timesheet needs a date, client (dropdown), project (dropdown), project phase (dropdown - Planning, Design, Production, QA, Launch), description, and # of hours worked (decimal). (sample data can be entered)
+
+5. Search timesheet capability by user, client, project, date, and keyword (from timesheet description).  Search Results grid should include: Sortable column headings and Export to Excel file functionality
+
+6. Appropriate Input Validation
+
+6. Error Handling 
+
+7. Clean css styling and easy-to-use user interface

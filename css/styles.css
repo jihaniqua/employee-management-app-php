@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+/* Colors */
+:root {
+    --primary-color: #FFC107;
+    --light-color: #FFECB3;
+    --dark-primary-color: #ffb300;
+    --accent-color: #FF9800;
+    --dark-accent-color: #e97800;
+    --border-color: #d7d7d7;
+    --error: #F44336;
+    --light-error: #f7dddd;
+    --table-bg: #f6f6f6;
+    --shadow-1: rgba(60, 66, 87, 0.1);
+    --shadow-2: rgba(0, 0, 0, 0.1);
+    --white: #fff;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+}
+
+/* General
+-----------------------------*/
+body {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--primary-text);
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    grid-template-columns:100%;
+    min-height:100vh;
+}
+
+main {
+    margin: 90px auto;
+    width: 80%;
+}
+
+/* Red error messages */
+.error {
+    color: var(--error);
+}
+
+/* Fonts
+-----------------------------*/
+h1 {
+    font-family: 'Lora', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h5 {
+    color: var(--secondary-text);
+    max-width: 80%;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 0 20px;
+}
+
+p {
+    color: var(--secondary-text);
+}
+
+/* All page title descriptions */
+h1 + p {
+    font-size: 1.1rem;
+    margin: 0 0 40px 0;
+    max-width: 700px;
+}
+/* All page titles */
+main > h1:first-child {
+    margin: 0;
+}
+
+/* Links
+-----------------------------*/
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Header links */
+li a {
+    margin-top: 24px;
+    color: var(--primary-text);
+    border-radius: 4px;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+/* Header links on hover */
+li a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* Header links on active */
+li a:active {
+    background-color: var(--primary-text);
+    color: var(--white);
+} 
+
+/* Header links container */
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+
+/* Form buttons */
+button {
+    margin-top: 24px;
+    background-color: var(--primary-text);
+    color: var(--white);
+    border-radius: 4px;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 500;
+}
+
+/* Form buttons on hover */
+button:hover {
+    opacity: 0.9;
+} 
+
+/* Basic underlined links */
+p a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+/* Basic underlined links on hover */
+p a:hover {
+    color: var(--accent-color);
+}
+
+/* Basic underlined links on active */
+p a:active {
+    color: var(--primary-text);
+}
+
+/* Edit table buttons */
+table a {
+    padding: 3px 10px;
+    border-radius: 15px;
+    background-color: var(--light-color);
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Edit table buttons on hover */
+table a:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* Header
+-----------------------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    top: 0;
+    width: 100%;
+}
+
+/* Header children */
+header div, nav {
+    align-self: center;
+    margin: 32px;
+}
+
+/* Form
+-----------------------------*/
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input, textarea {
+    padding: 12px 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+/* Table
+-----------------------------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 30px;
+}
+
+/* Table cells */
+th, td {
+    text-align: left;
+    padding: 10px;
+    width: 250px;
+}
+
+/* Table rows */
+tr {
+    border-bottom: 1pt solid var(--border-color);
+}
